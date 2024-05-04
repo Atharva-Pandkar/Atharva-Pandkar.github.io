@@ -1,0 +1,405 @@
+<!-- Create the starter page for personal portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Assets/imgs/A.png">
+    <link rel="stylesheet" href="../Assets/style.css"> 
+    <!-- BOX ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css">
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Atharva Pandkar</title>
+    </head>
+  <body>
+    <!-- HEADER -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav-logo">
+                <img src="../Assets/imgs/teal a small.png" alt="">
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link home active">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#about" class="nav-link about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#skills" class="nav-link skills">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#projects" class="nav-link projects">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#contact" class="nav-link contact">Contact</a>
+                      </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+  
+    <main class="l-main">
+        <!-- HOME -->
+        <section class="home bd-grid section" id="home">
+            <div class="home-data">
+                <h2 class="home-title">Hi,<br>I'm <span class="home-title-color"> Atharva Pandkar</span><br/>
+                Machine Learning Engineer
+            </h2>
+                <a href=".//Assets/Atharva Pandkar Resume.pdf" target="_blank" class="button" download=".//Assets/Atharva Pandkar Resume.pdf">Resume</a>
+            </div>
+
+            <div class="home-social">
+                <a href="https://www.linkedin.com/in/atharva-pandkar" target="_blank" class="home-social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Atharva-Pandkar" target="_blank" class="home-social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+
+            <div class="home-img"> 
+                <img class= "home-imgsrc image round-img" src="../Assets/imgs/LinkedIn_Profile_Image.jpg" alt="Atharva">
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about-container bd-grid">
+                <div style="text-align: center;">
+                    <p class="about-text">I am a Machine Learning Engineer with a strong background in Computer Science and Mathematics. I have experience in developing and deploying machine learning models for various applications. I am passionate about solving real-world problems using data-driven approaches. I am always eager to learn new technologies and improve my skills.</p>
+                    <br/>
+                    <p> Drop a mail @ pandkar.a@northeastern.edu
+                    <i style="color: #4070f4; font-size: 1.2rem; cursor: pointer;" class="bx bx-copy" id="copy"></i>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills section" id ="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container bd-grid">
+                <div>
+                    <h2 class="skills-subtitle">Machine Learning Skills</h2>
+                    <div class = "skills-data">
+                        <div class="skills-names">
+                            <i class='skill-icons--python-light skills-icon'></i>
+                            <span class="skills-name">Python</span>
+                        </div>
+                    </div>
+
+                    <div class = "skills-data">
+                        <div class="skills-names">
+                            <i class='skill-icons--scikitlearn-light skills-icon'></i>
+                            <span class="skills-name">Scikit-Learn</span>
+                        </div>
+                    </div>
+                    <div class = "skills-data">
+                        <div class="skills-names">
+                            <i class='skill-icons--tensorflow-light skills-icon'></i>
+                            <span class="skills-name">Tensorflow</span>
+                        </div>
+                    </div>
+                    <div class = "skills-data">
+                        <div class="skills-names">
+                            <img class='skills-icon' src="../Assets/imgs/natural-language-processing.png"></img>
+                            <span class="skills-name">Natural Language Processing</span>
+                        </div>
+                    </div>
+                    <div class = "skills-data">
+                        <div class="skills-names">
+                            <img class='skills-icon' src="../Assets/imgs/vision.png"></img>
+                            <span class="skills-name">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="skills-subtitle">Data Science Skills</h2>
+                    <div class = "skills-data">
+                        <div class="skills-names">
+                            <i class='devicon--pandas-wordmark skills-icon'></i>
+                            <span class="skills-name">Pandas</span>
+                        </div>
+                    </div>
+                    <div class = "skills-data">
+                        <div class="skills-names">
+                            <i class='devicon--matplotlib-wordmark skills-icon'></i>
+                            <span class="skills-name">Matplotlib</span>
+                        </div>
+                    </div>
+                    <div class = "skills-data">
+                        <div class="skills-names">
+                            <img class='skills-icon' src="../Assets/imgs/exploration.png"></img>
+                            <span class="skills-name">Exploratory Data Analysis</span>
+                        </div>
+                    </div>
+                    <div class = "skills-data">
+                        <div class="skills-names">
+                            <img class='skills-icon' src="../Assets/imgs/ab-testing.png"></img>
+                            <span class="skills-name">A/B Testing</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="skills-subtitle">Software Development Skills</h2>
+                    <div class = "skills-data">
+                        <div class="skills-names">
+                            <img class='skills-icon' src="../Assets/imgs/code.png"></img>
+                            <span class="skills-name">Git</span>
+                        </div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                          <i class="bx bxl-html5 skills-icon"></i>
+                          <span class="skills-name">HTML5</span>
+                        </div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                          <i class="bx bxl-javascript skills-icon"></i>
+                          <span class="skills-name">JAVASCRIPT</span>
+                        </div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                          <i class="bx bxl-react skills-icon"></i>
+                          <span class="skills-name">React</span>
+                        </div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                          <img
+                            class="skills-icon"
+                            src="../Assets/imgs/express.png"
+                            alt=""
+                          />
+                          <span class="skills-name">Express.js</span>
+                        </div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                          <i class="bx bxl-nodejs skills-icon"></i>
+                          <span class="skills-name">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects -->
+
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projects</h2>
+    
+            <div class="project-container">
+                <div class="project-img">
+                    <div class="diver"> <img class="imageheight" src="../Assets/imgs/law.webp" alt="Bangood" /></div>
+                    <p class="project-title">Benchmarking LLM Chatbots: Innovations in Legal Assistance</p>
+                    <p class="project-subtitle">
+                    This project developed an LLM chatbot designed to provide accessible legal assistance, with a focus on landlord-tenant law.
+                    A corpus of information was drawn from the LTB website and integrated into a Retrieval-Augmented Generation (RAG) pipeline.
+                     Vector embeddings were used to optimize search efficiency. Performance benchmarking of models like GPT-3.5, GPT-2, and LLaMA 2b guided 
+                     the fine-tuning of the chatbot, ensuring accurate and timely responses to user queries. <br />
+                    <br />
+                    <br />NLP | Data Wrangling  | Machine Learning | Python | Information Retrieval
+                    </p>
+                    <div class="project-btns">
+                        <a
+                            href="https://github.com/Atharva-Pandkar/LTB_Ontario"
+                            target="_blank"
+                            class="small-btn button"
+                        >
+                            Code<i class="bx bxl-github"></i>
+                        </a>
+                  
+                    </div>
+                </div>
+    
+
+
+                <div class="project-img">
+                    <div class="diver"> <img class="imageheight" src="../Assets/imgs/social_media.webp" alt="img" /></div>
+                    <p class="project-title">Social Media Influencer Marketing</p>
+                    <p class="project-subtitle">
+                        This project developed a comprehensive social media analysis tool designed to enhance influencer marketing strategies. 
+                        Using APIs, the tool collected data from over 10,000 Instagram profiles. Graph analysis techniques and Gephi were employed 
+                        for in-depth data exploration, while Python-powered Markov Chain algorithms calculated influencer rankings. 
+                        The project's success was demonstrated by its ability to significantly boost targeted marketing efforts, achieving a 75% increase in effectiveness.<br />
+                        <br />
+                        <br />API Integration | Data Analysis  | Graph Analysis | Python | Markov Chain 
+                    </p>
+                    <div class="project-btns">
+                    </div>
+                </div>
+    
+                <div class="project-img">
+                        <div class="diver"> <img class="imageheight" src="../Assets/imgs/2048.webp" alt="img" /></div>
+                        <p class="project-title">2048 Detailed comparasion of strategies</p>
+                        <p class="project-subtitle">
+                            This project transformed the classic game of 2048 by integrating advanced artificial intelligence techniques. 
+                             Utilizing Python, reinforcement learning, and Monte Carlo Tree Search, the AI-powered version strategically analyzed gameplay.
+                               In-depth exploration of reward strategies led to the publication of a research paper.<br />
+                        <br />
+                        <br />Artificial Intelligence | Reinforcement Learning  | Game Development | Monte Carlo Tree Search | Research Analysis 
+                        </p>
+                        <div class="project-btns">     
+                            <a
+                            href="https://doi.org/10.37118/ijdr.20323.11.2020"
+                            target="_blank"
+                            class="small-btn button"
+                        >
+                        Link<i class="bx bxl-github"></i>
+                        </a>
+                        </div>
+                </div>
+
+                <div class="project-img">
+                    <div class="diver"> <img class="imageheight" src="../Assets/imgs/sentiment.webp" alt="img" /></div>
+                        <p class="project-title">Twitter Sentiment Analysis</p>
+                        <p class="project-subtitle">
+                        This innovative project created a real-time sentiment analysis platform designed to track public opinion surrounding COVID-19.  Leveraging LSTM neural networks and Python Flask, the platform analyzed Twitter data to classify sentiment with high accuracy (87%).
+                        Results were presented dynamically on a web page, providing valuable and timely insights into public sentiment during the pandemic.<br />
+                    <br />
+                    <br />Natural Language Processing | Machine Learning  | Flask | Python | Data Visualizaiton 
+                    </p>
+                    <div class="project-btns"> 
+                    </div>
+                </div>
+              
+
+                <div class="project-img">
+                    <div class="diver"> <img class="imageheight" src="../Assets/imgs/multi_modal.webp" alt="img" /></div>
+                    <p class="project-title">Multimodal Gesture Recognition</p>
+                     <p class="project-subtitle">
+                        This project developed a cutting-edge multimodal gesture recognition system, seamlessly integrating vision and gesture recognition technologies.
+                        Utilizing the ResNet 106 model, the system achieved impressive accuracy in recognizing hand gestures representing English alphabets (98%) 
+                        and made significant strides in language recognition tasks (76%).<br />
+                    <br />
+                    <br />Computer Vision | Gesture Recognition  | Multimodal Systems | Python | Deep Learning 
+                     </p>
+                    <div class="project-btns">
+                        <a
+                        href="https://github.com/Atharva-Pandkar/Hand-Gesture-Recognition"
+                        target="_blank"
+                        class="small-btn button"
+                    >
+                        Code<i class="bx bxl-github"></i>
+                    </a>
+                    </div>
+               </div>
+
+               <div class="project-img">
+                <div class="diver"> <img class="imageheight" src="../Assets/imgs/plagarism.webp" alt="img" /></div>
+                <p class="project-title">Handwritten Text Recognition</p>
+                 <p class="project-subtitle">
+                    This project focused on developing an efficient handwritten text recognition system for the purpose of plagiarism detection.
+                     Leveraging GRU neural networks, the system significantly improved text extraction and analysis capabilities from PDF documents.
+                      The project demonstrated adaptability through the transition from LeNet-5 CNN architecture, ultimately achieving an impressive 85% F1 score.<br />
+                <br />
+                <br />Natural Language Processing | Handwriting Recognition  | Plagiarism Detection | Computer Vision | Deep Learning 
+                 </p>
+                <div class="project-btns">
+                    <a
+                    href="https://github.com/Atharva-Pandkar/MNIST-Detection"
+                    target="_blank"
+                    class="small-btn button"
+                >
+                    Code<i class="bx bxl-github"></i>
+                </a>
+                </div>
+                </div>
+
+                <div class="project-img">
+                    <div class="diver"> <img class="imageheight" src="../Assets/imgs/augmented.webp" alt="img" /></div>
+                    <p class="project-title">Reality Mapper</p>
+                     <p class="project-subtitle">
+                        This project created an innovative augmented reality (AR) system designed to enhance immersive experiences.
+                         The system utilized camera calibration with a chessboard to precisely map image coordinates to their real-world counterparts.
+                          This enabled the accurate and dynamic placement of virtual objects into live scenes, pushing the boundaries of AR technology.<br />
+                    <br />
+                    <br />Augmented Reality | Computer Vision  | Camera Calibration | Image Processing | 3D Mapping 
+                     </p>
+                    <div class="project-btns">
+                        <a
+                        href="https://github.com/Atharva-Pandkar/Calibaration---Augmented-Reality"
+                        target="_blank"
+                        class="small-btn button"
+                    >
+                        Code<i class="bx bxl-github"></i>
+                    </a>
+                    </div>
+                </div>
+              
+                <div class="project-img">
+                    <div class="diver"> <img class="imageheight" src="../Assets/imgs/credit.webp" alt="img" /></div>
+                    <p class="project-title">Credit Risk Prediction</p>
+                     <p class="project-subtitle">
+                        This project aimed to develop robust credit risk prediction models for financial institutions.
+                          It involved the evaluation and comparison of various machine learning algorithms, including K-Nearest Neighbors, Logistic Regression, Decision Trees,
+                           and Neural Networks. Working with a dataset of 1000 loan applicants, the project achieved predictive accuracies up to 85% and identified the key factors
+                            that contribute to accurate credit risk assessment.<br />
+                    <br />
+                    <br />Machine Learning | Predictive Modeling  | Credit Risk Analysis | Data Analysis | Comparative Analysis 
+                     </p>
+                    <div class="project-btns">
+                        <a
+                        href="https://github.com/Atharva-Pandkar/Credit-Risk-Prediction"
+                        target="_blank"
+                        class="small-btn button"
+                    >
+                        Code<i class="bx bxl-github"></i>
+                    </a>
+                    </div>
+                </div>
+
+            </div>
+          </section>
+
+    </main>
+
+<!--===== FOOTER + CONTACT=====-->
+<footer class="footer section" id="contact">
+    <h2 class="section-title">Get in touch</h2>
+    <p class="footer-title">Atharva Pandkar</p>
+    <div class="footer-social">
+      <a
+        href="https://www.linkedin.com/in/atharva-pandkar"
+        target="_blank"
+        class="footer-icon"
+        ><i class="bx bxl-linkedin">
+          <br />
+          <p class="fffff">LinkedIn</p></i
+        ></a
+      >
+      <a
+        href="https://github.com/Atharva-Pandkar"
+        target="_blank"
+        class="footer-icon"
+        ><i class="bx bxl-github">
+          <br />
+          <p class="fffff">Github</p>
+          </i
+        ></a
+      >
+      
+      
+    </div>
+    <div id="last" class="footer-social">
+      <div class="footer-social" id="lastdiv"><i  class="bx bx-mail-send footer-icon" ></i><p class="fffff"> pandkar.a@northeastern.edu </p></div>
+      <div class="footer-social" id="lastdiv"><i  class="bx bx-phone footer-icon"></i><p class="fffff">+1 213-272-8261</p></div>
+    </div>
+    <p>&#169; 2022 copyright all right reserved</p>
+  </footer>
+
+  <!--===== MAIN JS =====-->
+  <script src="../Assets/script.js"></script>
+
+  </body>
+
+  <script src="../Assets/script.js"></script> </body>
+</html>
