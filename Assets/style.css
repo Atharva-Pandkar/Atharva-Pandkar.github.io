@@ -612,3 +612,41 @@ img.man-icons {
     right: 10%;
   }
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  max-width: 500px;
+}
+.contact-input {
+  width: 100%;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid var(--second-color);
+  outline: none;
+  margin-bottom: var(--mb-4);
+}
+.contact-button {
+  display: block;
+  background-color: var(--first-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  padding: 0.75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+.contact-button:hover {
+  background-color: #fff;
+  color: var(--first-color);
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
