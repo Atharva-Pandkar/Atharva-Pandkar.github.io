@@ -404,7 +404,27 @@
     
     <p>&#169; 2022 copyright all right reserved</p>
   </footer>
-
+    <script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const callerName = document.getElementById('callerName').value;
+    const phoneNumber = document.getElementById('phoneNumber').value;
+    
+    fetch('https://hook.us1.make.com/vton1xu7g0uavit4haaab2baqzkswkyo', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        phoneNumber: phoneNumber,
+        callerName: callerName
+      })
+    })
+    .then(response => response.json())
+    .then(data => console.log('Success:', data))
+    .catch((error) => console.error('Error:', error));
+  });
+</script>
   <!--===== MAIN JS =====-->
   <script src="./Assets/script.js"></script>
 
