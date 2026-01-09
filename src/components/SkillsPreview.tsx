@@ -28,7 +28,7 @@ const SkillsPreview = () => {
     { name: 'Node.js', icon: 'bx bxl-nodejs', iconType: 'boxicon' },
   ];
 
-  const renderIcon = (skill: { icon: string; iconType?: string }) => {
+  const renderIcon = (skill: { icon: string; iconType?: string; name: string }) => {
     if (skill.iconType === 'image') {
       return <img className="carousel-skill-icon" src={skill.icon} alt={skill.name} />;
     } else if (skill.iconType === 'iconify') {

@@ -4,8 +4,6 @@ import About from '../components/About';
 import SkillsPreview from '../components/SkillsPreview';
 import ExperiencePreview from '../components/ExperiencePreview';
 import ProjectsPreview from '../components/ProjectsPreview';
-import Contact from '../components/Contact';
-import ScrollProgress from '../components/ScrollProgress';
 
 const HomePage = () => {
   useEffect(() => {

@@ -17,7 +17,7 @@ const Button = ({
   children,
   href,
   onClick,
-  variant = 'primary',
+  variant: _variant = 'primary',
   size = 'md',
   className = '',
   download,
