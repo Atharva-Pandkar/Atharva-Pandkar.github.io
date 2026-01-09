@@ -5,11 +5,14 @@ import ProjectsPage from './pages/ProjectsPage';
 import SkillsPage from './pages/SkillsPage';
 import ExperiencePage from './pages/ExperiencePage';
 import ResearchPage from './pages/ResearchPage';
-import './App.css';
+import Contact from './components/Contact';
+import ScrollProgress from './components/ScrollProgress';
+import './index.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
+      <ScrollProgress />
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -18,6 +21,7 @@ function App() {
         <Route path="/experience" element={<ExperiencePage />} />
         <Route path="/research" element={<ResearchPage />} />
       </Routes>
+      <Contact />
     </Router>
   );
 }

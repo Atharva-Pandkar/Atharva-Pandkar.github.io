@@ -42,17 +42,13 @@ const HomePage = () => {
   }, []);
 
   return (
-    <>
-      <ScrollProgress />
-      <main className="l-main">
-        <Home />
-        <About />
-        <SkillsPreview />
-        <ExperiencePreview />
-        <ProjectsPreview />
-      </main>
-      <Contact />
-    </>
+    <main className="l-main">
+      <Home />
+      <About />
+      <SkillsPreview />
+      <ExperiencePreview />
+      <ProjectsPreview />
+    </main>
   );
 };
 
