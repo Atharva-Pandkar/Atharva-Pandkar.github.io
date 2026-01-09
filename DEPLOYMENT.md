@@ -48,8 +48,9 @@ This guide explains how to deploy your Vite + React portfolio to GitHub Pages.
 - This file is automatically copied during build via the Vite plugin
 
 ### Asset Paths
-- All asset paths use relative paths (`./`) to work correctly on GitHub Pages
-- The `base: './'` in `vite.config.ts` ensures this
+- For user/organization GitHub Pages (username.github.io), use `base: '/'` in `vite.config.ts`
+- For project pages (username.github.io/project-name), use `base: '/project-name/'`
+- Asset paths in code are handled automatically by Vite
 
 ### Troubleshooting
 
