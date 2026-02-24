@@ -1,3 +1,4 @@
+import posthog from 'posthog-js';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import resume from '../../Assets/Atharva_Pandkar_Resume.pdf';
@@ -58,6 +59,7 @@ const Home = () => {
             rel="noopener noreferrer"
             className="button"
             download="Atharva_Pandkar_Resume.pdf"
+            onClick={() => posthog.capture('resume_downloaded', { location: 'home_hero' })}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -74,6 +76,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="home-social-icon"
+            onClick={() => posthog.capture('social_link_clicked', { platform: 'linkedin', location: 'home_hero' })}
             whileHover={{ scale: 1.2, rotate: 5 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -84,6 +87,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="home-social-icon"
+            onClick={() => posthog.capture('social_link_clicked', { platform: 'github', location: 'home_hero' })}
             whileHover={{ scale: 1.2, rotate: -5 }}
             whileTap={{ scale: 0.9 }}
           >

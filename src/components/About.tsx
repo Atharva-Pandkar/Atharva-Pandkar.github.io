@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import posthog from 'posthog-js';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -13,11 +14,13 @@ const About = () => {
     try {
       await navigator.clipboard.writeText('atharva.pandkar.1820@gmail.com');
       setCopied(true);
+      posthog.capture('email_copied', { location: 'about_section' });
       setTimeout(() => {
         setCopied(false);
       }, 2000);
     } catch (err) {
       console.error('Failed to copy email:', err);
+      posthog.captureException(err);
     }
   };
 

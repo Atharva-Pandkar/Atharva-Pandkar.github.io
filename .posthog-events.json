@@ -1,0 +1,47 @@
+[
+  {
+    "event": "resume_downloaded",
+    "description": "User clicked the Download Resume button on the home section",
+    "file": "src/components/Home.tsx"
+  },
+  {
+    "event": "social_link_clicked",
+    "description": "User clicked a social media link (LinkedIn or GitHub) on the home section",
+    "file": "src/components/Home.tsx"
+  },
+  {
+    "event": "project_link_clicked",
+    "description": "User clicked a GitHub Code or external link button on a project card",
+    "file": "src/components/Projects.tsx"
+  },
+  {
+    "event": "project_link_clicked",
+    "description": "User clicked a GitHub Code or external link button on a project card (full projects page)",
+    "file": "src/pages/ProjectsPage.tsx"
+  },
+  {
+    "event": "email_copied",
+    "description": "User clicked the copy email icon in the About section",
+    "file": "src/components/About.tsx"
+  },
+  {
+    "event": "contact_form_submitted",
+    "description": "User successfully submitted the contact/inquiry form in the footer",
+    "file": "src/components/Contact.tsx"
+  },
+  {
+    "event": "contact_form_error",
+    "description": "Contact form submission failed with an error",
+    "file": "src/components/Contact.tsx"
+  },
+  {
+    "event": "footer_social_link_clicked",
+    "description": "User clicked a social media link (LinkedIn or GitHub) in the footer",
+    "file": "src/components/Contact.tsx"
+  },
+  {
+    "event": "page_viewed",
+    "description": "User navigated to a new page (route change) - top of conversion funnel",
+    "file": "src/App.tsx"
+  }
+]

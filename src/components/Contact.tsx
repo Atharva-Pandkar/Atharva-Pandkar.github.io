@@ -1,4 +1,5 @@
 import { FormEvent, useState } from 'react';
+import posthog from 'posthog-js';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -30,6 +31,7 @@ const Contact = () => {
       });
 
       if (response.ok) {
+        posthog.capture('contact_form_submitted', { caller_name: formData.callerName });
         alert('Thank you for your inquiry! We will get back to you soon.');
         setFormData({ callerName: '', phoneNumber: '' });
       } else {
@@ -37,6 +39,8 @@ const Contact = () => {
       }
     } catch (error) {
       console.error('Error:', error);
+      posthog.capture('contact_form_error', { error: String(error) });
+      posthog.captureException(error);
       alert('There was an error submitting your form. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -79,6 +83,7 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="footer-icon"
+          onClick={() => posthog.capture('footer_social_link_clicked', { platform: 'linkedin' })}
           whileHover={{ scale: 1.2, y: -5 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -92,6 +97,7 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="footer-icon"
+          onClick={() => posthog.capture('footer_social_link_clicked', { platform: 'github' })}
           whileHover={{ scale: 1.2, y: -5 }}
           whileTap={{ scale: 0.9 }}
         >
