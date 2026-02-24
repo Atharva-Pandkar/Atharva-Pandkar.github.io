@@ -4,6 +4,8 @@ A modern, responsive portfolio website built with Vite, React, and TypeScript.
 
 ## 🚀 Features
 
+
+
 - ⚡ Fast development with Vite
 - ⚛️ React with TypeScript for type safety
 - 🎨 Modern, responsive design
