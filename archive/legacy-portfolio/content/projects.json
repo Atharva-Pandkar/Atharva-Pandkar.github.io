@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1",
+    "title": "Benchmarking LLM Chatbots: Innovations in Legal Assistance",
+    "technologies": "NLP | Data Wrangling | Machine Learning | Python | Information Retrieval",
+    "githubUrl": "https://github.com/Atharva-Pandkar/LTB_Ontario"
+  },
+  {
+    "id": "2",
+    "title": "Social Media Influencer Marketing",
+    "technologies": "API Integration | Data Analysis | Graph Analysis | Python | Markov Chain"
+  },
+  {
+    "id": "3",
+    "title": "2048 Detailed comparasion of strategies",
+    "technologies": "Artificial Intelligence | Reinforcement Learning | Game Development | Monte Carlo Tree Search | Research Analysis",
+    "externalUrl": "https://doi.org/10.37118/ijdr.20323.11.2020"
+  },
+  {
+    "id": "4",
+    "title": "Twitter Sentiment Analysis",
+    "technologies": "Natural Language Processing | Machine Learning | Flask | Python | Data Visualization"
+  },
+  {
+    "id": "5",
+    "title": "Multimodal Gesture Recognition",
+    "technologies": "Computer Vision | Gesture Recognition | Multimodal Systems | Python | Deep Learning",
+    "githubUrl": "https://github.com/Atharva-Pandkar/Hand-Gesture-Recognition"
+  },
+  {
+    "id": "6",
+    "title": "Handwritten Text Recognition",
+    "technologies": "Natural Language Processing | Handwriting Recognition | Plagiarism Detection | Computer Vision | Deep Learning",
+    "githubUrl": "https://github.com/Atharva-Pandkar/MNIST-Detection"
+  },
+  {
+    "id": "7",
+    "title": "Reality Mapper",
+    "technologies": "Augmented Reality | Computer Vision | Camera Calibration | Image Processing | 3D Mapping",
+    "githubUrl": "https://github.com/Atharva-Pandkar/Calibaration---Augmented-Reality"
+  },
+  {
+    "id": "8",
+    "title": "Credit Risk Prediction",
+    "technologies": "Machine Learning | Predictive Modeling | Credit Risk Analysis | Data Analysis | Comparative Analysis",
+    "githubUrl": "https://github.com/Atharva-Pandkar/Credit-Risk-Prediction"
+  }
+]
