@@ -3,8 +3,10 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import { usePageTracking } from './hooks/usePageTracking';
 import AboutPage from './pages/AboutPage';
+import ExperienceArticlePage from './pages/ExperienceArticlePage';
 import ExperiencePage from './pages/ExperiencePage';
 import HomePage from './pages/HomePage';
+import ProjectArticlePage from './pages/ProjectArticlePage';
 import ProjectsPage from './pages/ProjectsPage';
 import ResearchPage from './pages/ResearchPage';
 import SkillsPage from './pages/SkillsPage';
@@ -19,7 +21,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/experience" element={<ExperiencePage />} />
+        <Route path="/experience/:id" element={<ExperienceArticlePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/:id" element={<ProjectArticlePage />} />
         <Route path="/skills" element={<SkillsPage />} />
         <Route path="/research" element={<ResearchPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />

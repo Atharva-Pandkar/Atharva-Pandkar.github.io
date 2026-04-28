@@ -17,9 +17,9 @@ const ProjectsCarousel = () => (
       <div className="carousel-wrap">
         <div className="carousel">
           {projectsContent.slice(0, 4).map((project) => (
-            <article key={project.id} className="card">
+            <article key={project.id} className="card" style={{ display: 'flex', flexDirection: 'column' }}>
               <p className="card-title">{project.title}</p>
-              <p className="card-body">{project.description}</p>
+              <p className="card-body" style={{ flex: 1 }}>{project.description}</p>
               <div className="tags">
                 {project.technologies.slice(0, 4).map((tech) => (
                   <span key={tech} className="tag">
@@ -31,6 +31,13 @@ const ProjectsCarousel = () => (
                 )}
               </div>
               <div className="card-actions">
+                <Link
+                  to={`/projects/${project.id}`}
+                  className="btn btn-primary"
+                  style={{ fontSize: '0.8rem', padding: '0.35rem 0.9rem' }}
+                >
+                  Read →
+                </Link>
                 {project.githubUrl && (
                   <a
                     href={project.githubUrl}
@@ -38,9 +45,10 @@ const ProjectsCarousel = () => (
                     rel="noreferrer"
                     className="btn btn-ghost"
                     style={{ fontSize: '0.8rem', padding: '0.35rem 0.8rem' }}
-                    onClick={() =>
-                      trackOutboundLink('github', project.githubUrl!, 'projects_carousel')
-                    }
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      trackOutboundLink('github', project.githubUrl!, 'projects_carousel');
+                    }}
                   >
                     Code ↗
                   </a>
@@ -52,9 +60,10 @@ const ProjectsCarousel = () => (
                     rel="noreferrer"
                     className="btn btn-accent-ghost"
                     style={{ fontSize: '0.8rem', padding: '0.35rem 0.8rem' }}
-                    onClick={() =>
-                      trackOutboundLink('external', project.externalUrl!, 'projects_carousel')
-                    }
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      trackOutboundLink('external', project.externalUrl!, 'projects_carousel');
+                    }}
                   >
                     View ↗
                   </a>

@@ -16,13 +16,29 @@ const ExperienceCarousel = () => (
       <div className="carousel-wrap">
         <div className="carousel">
           {experienceContent.slice(0, 4).map((item) => (
-            <article key={item.id} className="card">
-              <p className="card-period">{item.period}</p>
-              <p className="card-company">{item.company}</p>
-              <p className="card-role">{item.role}</p>
-              <p className="card-location">{item.location}</p>
-              <p className="card-description">{item.description}</p>
-            </article>
+            <Link
+              key={item.id}
+              to={`/experience/${item.id}`}
+              style={{ textDecoration: 'none', display: 'contents' }}
+            >
+              <article className="card" style={{ cursor: 'pointer' }}>
+                <p className="card-period">{item.period}</p>
+                <p className="card-company">{item.company}</p>
+                <p className="card-role">{item.role}</p>
+                <p className="card-location">{item.location}</p>
+                <p className="card-description">{item.description}</p>
+                <p
+                  style={{
+                    marginTop: '0.9rem',
+                    fontSize: '0.78rem',
+                    color: 'var(--accent)',
+                    fontWeight: 500,
+                  }}
+                >
+                  Read article →
+                </p>
+              </article>
+            </Link>
           ))}
         </div>
       </div>

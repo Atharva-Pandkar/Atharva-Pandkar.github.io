@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { projectsContent } from '../content/projects';
 import { trackOutboundLink } from '../lib/analytics';
 
@@ -10,9 +11,9 @@ const Projects = () => (
       </h2>
       <div className="card-grid">
         {projectsContent.map((project) => (
-          <article key={project.id} className="card">
+          <article key={project.id} className="card" style={{ display: 'flex', flexDirection: 'column' }}>
             <p className="card-title">{project.title}</p>
-            <p className="card-body">{project.description}</p>
+            <p className="card-body" style={{ flex: 1 }}>{project.description}</p>
             <div className="tags">
               {project.technologies.map((tech) => (
                 <span key={tech} className="tag">
@@ -21,6 +22,13 @@ const Projects = () => (
               ))}
             </div>
             <div className="card-actions">
+              <Link
+                to={`/projects/${project.id}`}
+                className="btn btn-primary"
+                style={{ fontSize: '0.8rem', padding: '0.35rem 0.9rem' }}
+              >
+                Read Article →
+              </Link>
               {project.githubUrl && (
                 <a
                   href={project.githubUrl}
@@ -28,7 +36,10 @@ const Projects = () => (
                   rel="noreferrer"
                   className="btn btn-ghost"
                   style={{ fontSize: '0.8rem', padding: '0.35rem 0.8rem' }}
-                  onClick={() => trackOutboundLink('github', project.githubUrl!, 'projects')}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    trackOutboundLink('github', project.githubUrl!, 'projects');
+                  }}
                 >
                   Code ↗
                 </a>
@@ -40,7 +51,10 @@ const Projects = () => (
                   rel="noreferrer"
                   className="btn btn-accent-ghost"
                   style={{ fontSize: '0.8rem', padding: '0.35rem 0.8rem' }}
-                  onClick={() => trackOutboundLink('external', project.externalUrl!, 'projects')}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    trackOutboundLink('external', project.externalUrl!, 'projects');
+                  }}
                 >
                   View ↗
                 </a>
